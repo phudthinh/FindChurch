@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tìm nhà thờ</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <section>
+        <div class="container">
+        <div class="find">
+            <h1 class="find__title">
+            Tìm nhà thờ gần đây - Công cụ tìm nhà thờ quanh bạn
+            </h1>
+            <input
+            class="find__search__box"
+            type="text"
+            placeholder="Nhập tên nhà thờ"
+            />
+            <div class="find">
+            <div class="find__select">
+                <select class="find__select_city" name="city" id="city">
+                <option class="find__select_city__option" value="0">
+                    Chọn tỉnh/thành phố
+                </option>
+                </select>
+                <select class="find__seach__district" name="district" id="district">
+                <option class="find__select_district__option" value="0">
+                    Chọn quận/huyện
+                </option>
+                </select>
+            </div>
+            </div>
+            <button class="button__find" id="button__find">Tìm kiếm</button>
+        </div>
+        <div class="map" id="map"></div>
+        <ul class="listview__church">
+            <li class="item__church">
+                <img class="item__church__thumbnail" src="./images/churchDefault.jpg" alt="" />
+                <span class="item__info">
+                    <h3 class="item__church__title">Tên nhà thờ</h3>
+                    <p class="item__church__address">Địa chỉ</p>
+                </span>
+                <button class="item__church__go">Go</button>
+            </li>
+        </ul>
+      </div>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Section styles */
+section {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Find section styles */
+.find {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.find__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.find__search__box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.find__select {
+  margin-bottom: 10px;
+}
+
+.find__select_city,
+.find__seach__district {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.button__find {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button__find:hover {
+  background-color: #2980b9;
+}
+
+/* Map and listview styles */
+.map {
+  position: absolute;
+  width: 100%; /* Thay đổi kích thước theo ý muốn */
+  top: 0;
+  bottom: 0;
+  height: 400px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.listview__church {
+  border: 1px solid #ccc;
+  list-style: none;
+}
+
+.item__church {
+    position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.item__church__thumbnail {
+  width: 200px;
+  height: 120px;
+  margin-right: 10px;
+}
+
+.item__church__title{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.item__church__address{
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.item__info{
+   width: 480px;
+}
+
+.item__church__go{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
