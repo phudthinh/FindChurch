@@ -93,7 +93,7 @@ function performSearchWithDefaultKeyword(searchKeyword, keyCity, keyDistrict) {
 
         let listView = document.querySelector('.listview__church');
         listView.innerHTML = '';
-
+        listNearestPlaces = [];
         nearestPlaces.forEach(place => {
           let churchItem = document.createElement('li');
           churchItem.classList.add('item__church');
