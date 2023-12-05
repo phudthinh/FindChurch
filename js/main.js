@@ -70,7 +70,7 @@ function performSearchWithDefaultKeyword(searchKeyword, keyCity, keyDistrict) {
         let bbox = [userPosition[0] - 0.3, userPosition[1] - 0.3, userPosition[0] + 0.3, userPosition[1] + 0.3].join(',');
         const cityCoordinates = data.features[0].bbox;
         if (keyCity != "Chọn tỉnh/thành phố") {
-          bbox = [cityCoordinates[0] - 0.5, cityCoordinates[1] - 0.5, cityCoordinates[2] + 0.5, cityCoordinates[3] + 0.5].join(',');
+          bbox = [cityCoordinates[0] - 0.3, cityCoordinates[1] - 0.3, cityCoordinates[2] + 0.3, cityCoordinates[3] + 0.3].join(',');
         }
 
         const searchURL = `https://api.mapbox.com/geocoding/v5/mapbox.places/Nhà thờ ${searchKeyword}.json?access_token=${mapboxgl.accessToken}&bbox=${bbox}&limit=100&country=VN`;
